@@ -1,0 +1,162 @@
+.car-container{
+    display:flex;
+    flex-direction: column;
+    border-radius:10px;
+    box-shadow: 0 0 10px gray;
+    width:300px;
+}
+
+.hero-container{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    border-bottom: 3px solid teal;
+    margin:0 0 3vw;
+}
+
+.subheader-text-container{
+    margin-left:4vw;
+    width:50vw;
+}
+
+.subheader-text{
+    color:teal;
+    font-size:36px;
+    margin:2vw 0 3vw;
+}
+
+.subheader-subtext{
+    color:gray;
+    margin:2vw 0;
+    font-size:16px;
+}
+
+.subheader-image{
+    width:35vw;
+    height:10vw;
+}
+
+.filters-sort-container{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+.sort-container{
+    display:flex;
+    align-items: center;
+}
+
+.filter-container{
+    display:flex;
+    align-items: center;
+}
+
+.sort-text{
+    margin:0;
+    color:gray;
+    font-size:20px;
+}
+
+.filter-text{
+    margin:0 0 0 20px;
+    color:gray;
+    font-size:20px;
+}
+
+.sort-choice, .filter-choice{
+    padding:5px;
+    margin-left:20px;
+    color:gray;
+    font-weight:700;
+    border:2px solid gray
+}
+
+.car-image{
+    width:300px;
+    height:200px; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-title-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px;
+}
+
+.car-price{
+    align-self:center
+}
+
+.add-to-cart-container{
+    cursor: pointer;
+}
+
+.cars-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom:50px;
+}
+
+@media (max-width:1000px){
+    .cars-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px){
+    .subheader-text{
+        font-size:24px;
+        margin:0 0 20px;
+    }
+
+    .subheader-subtext{
+        font-size:12px;
+    }
+}
+
+@media (max-width:660px){
+    .cars-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .car-container{
+        margin: 0 auto;
+    }
+
+    .filters-sort-container{
+        flex-direction: column;
+    }
+
+    .filter-container, .sort-container{
+        justify-content: space-between;
+        margin-bottom:10px;
+    }
+
+    .filter-text{
+        margin:0;
+    }
+}
+
+@media (max-width:512px){
+    .subheader-text{
+        font-size:16px;
+        margin-top:-10px;
+    }
+
+    .subheader-subtext{
+        font-size:8px;
+    }
+}
